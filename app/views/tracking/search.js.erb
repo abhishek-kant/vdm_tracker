@@ -1,0 +1,5 @@
+<% unless @tracker.errors.any? %>
+    $("#content-holder").html("<%= escape_javascript(render partial: "result", locals: {tracking_information: @tracker.information}) %>")
+<% else %>
+    emptyContainer.html("<%= escape_javascript(render partial: "new") %>");
+<% end %>

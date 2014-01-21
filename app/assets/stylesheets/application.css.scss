@@ -11,3 +11,27 @@
  *= require_self
  *= require_tree .
  */
+
+div.transition {
+  background: none repeat scroll 0 0 #000000;
+  display: table-cell;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 9999999;
+  img {
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    padding: 0;
+    width: 70px;
+    z-index: 9999999;
+  }
+}
+.hide{
+  display: none !important;
+}

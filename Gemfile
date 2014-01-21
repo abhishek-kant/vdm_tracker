@@ -33,6 +33,8 @@ gem "fedex"
 gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
+gem  "nokogiri"
+gem 'simple_form'
 
 
 group :doc do

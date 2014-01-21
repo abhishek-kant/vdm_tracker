@@ -12,5 +12,17 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+
+var emptyContainer;
+
+$(function(){
+    emptyContainer = $("#emptyContainer");
+    $(document).ajaxStart(function() {
+        $('.transition').removeClass("hide");
+    }).ajaxStop(function () {
+            $('.transition').addClass("hide");
+        });
+});
